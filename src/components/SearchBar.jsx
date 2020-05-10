@@ -10,6 +10,9 @@ class SearchBar extends React.Component {
     return (
       <form action="">
         <input type="text" placeholder="Search..." />
+        <button type="submit">
+          <i class="fas fa-search" />
+        </button>
       </form>
     );
   }
