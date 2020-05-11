@@ -5,7 +5,7 @@ import { Grid } from "@material-ui/core";
 import SearchBar from "./components/SearchBar.jsx";
 import VideoDetails from "./components/VideoDetails.jsx";
 import VideoList from "./components/VideoList.jsx";
-// import youtube from "./api/youtube";
+import youtube from "./api/youtube";
 
 // export default function App() {
 //   return (
@@ -17,14 +17,27 @@ import VideoList from "./components/VideoList.jsx";
 // }
 
 class App extends React.Component {
+  handleSubmit = async searchTerm => {
+    const response = await youtube.get("search", {
+      params: {
+        part: "snippet",
+        maxResults: 20,
+        key: "",
+        q: searchTerm
+      }
+    });
+    console.log(response);
+    console.log(response.data.items);
+  };
+
   render() {
     return (
       <div className="App">
-        <Grid justify="center" container spacing={16}>
+        <Grid justify="center" container spacing={10}>
           <Grid item xs={12}>
-            <Grid container spacing={16}>
+            <Grid container spacing={10}>
               <Grid item xs={12}>
-                <SearchBar />
+                <SearchBar onFormSubmit={this.handleSubmit} />
               </Grid>
               <Grid item xs={8}>
                 <VideoDetails />
