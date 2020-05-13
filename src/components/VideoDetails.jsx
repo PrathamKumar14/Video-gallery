@@ -1,5 +1,6 @@
 import React from "react";
 // import { Paper, Typography } from "@material-ui/core";
+import "./VideoDetails.css";
 
 const VideoDetails = ({ video }) => {
   if (!video) return <h1>Loading...</h1>;
@@ -28,13 +29,7 @@ const VideoDetails = ({ video }) => {
     //   </Paper>
     // </div>
     <div>
-      <iframe
-        height="700px"
-        width="100%"
-        src={videoSrc}
-        title="video player"
-        frameBorder="0"
-      />
+      <iframe className="frame" src={videoSrc} title="video player" />
     </div>
   );
 };
