@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-import { Grid } from "@material-ui/core";
+// import { Grid } from "@material-ui/core";
 import SearchBar from "./components/SearchBar.jsx";
 import VideoDetails from "./components/VideoDetails.jsx";
 import VideoList from "./components/VideoList.jsx";
@@ -44,7 +44,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Grid justify="center" container spacing={10}>
+        {/* <Grid justify="center" container spacing={10}>
           <Grid item xs={12}>
             <Grid container spacing={10}>
               <Grid item xs={12}>
@@ -58,7 +58,9 @@ class App extends React.Component {
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </Grid> */}
+        <SearchBar onFormSubmit={this.handleSubmit} />
+        <VideoDetails video={this.state.selectedVideos} />
       </div>
     );
   }
