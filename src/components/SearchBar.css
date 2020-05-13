@@ -21,6 +21,10 @@ input {
   text-shadow: 1px 1px 0 #fff;
 }
 
+input:focus {
+  outline: none;
+}
+
 button {
   margin-left: 10px;
   width: 50px;
