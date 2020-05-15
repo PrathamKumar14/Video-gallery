@@ -1,9 +1,10 @@
 import React from "react";
 // import { Paper, Typography } from "@material-ui/core";
+import Loading from "./Loading";
 import "./VideoDetails.css";
 
 const VideoDetails = ({ video }) => {
-  if (!video) return <h1>Loading...</h1>;
+  if (!video) return <Loading />;
 
   // console.log(video);
   console.log(video.id.videoId);
