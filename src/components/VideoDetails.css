@@ -1,14 +1,21 @@
-.frame {
-  height: 400px;
-  width: 55%;
-  border: 5px solid rgb(180, 180, 180);
-  border-radius: 30px;
-  box-shadow: 5px 5px 10px rgb(158, 158, 158);
-  /* box-shadow: -5px -5px 20px #fff, 5px 5px 20px #c0c0c0; */
-  transition: all 1s ease-in-out;
+.paper {
+  background-color: transparent;
 }
 
-.frame:hover {
+.frame {
+  height: 500px;
+  width: 60%;
+  /* height: 100%;
+  width: 100%; */
+  border: 5px solid rgb(180, 180, 180);
+  border-radius: 30px;
+  /* border-bottom-right-radius: 0px; */
+  box-shadow: 5px 5px 10px rgb(153, 153, 153);
+  /* box-shadow: -5px -5px 20px #fff, 5px 5px 20px #c0c0c0; */
+  transition: all 2s ease-in-out;
+}
+
+/* .frame:hover {
   width: 90%;
   height: 600px;
-}
+} */
