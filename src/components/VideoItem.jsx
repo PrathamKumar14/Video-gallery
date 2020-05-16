@@ -2,9 +2,11 @@ import React from "react";
 import "./VideoItem.css";
 
 const VideoItem = ({ video }) => {
+  const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
+
   return (
     <div className="parent-div">
-      <h1>Video Item</h1>
+      <iframe src={videoSrc} title="video player" />
     </div>
   );
 };
