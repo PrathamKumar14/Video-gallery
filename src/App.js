@@ -28,7 +28,7 @@ class App extends React.Component {
     const response = await youtube.get("search", {
       params: {
         part: "snippet",
-        maxResults: 20,
+        maxResults: 50,
         key: "AIzaSyAsxZIi126Nr7dxk_0oRWQnIsfmlvsKdz8",
         q: searchTerm
       }
