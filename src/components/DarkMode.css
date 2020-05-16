@@ -7,6 +7,10 @@
   margin-left: 1300px;
 }
 
+.dark-btn:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 770px) {
   .dark-btn {
     margin: 0px;

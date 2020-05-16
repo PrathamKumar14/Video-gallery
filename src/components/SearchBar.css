@@ -43,6 +43,10 @@ input:focus {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
 
+.search-button:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 770px) {
   input {
     width: 250px;

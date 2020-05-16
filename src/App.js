@@ -5,7 +5,7 @@ import "./styles.css";
 import SearchBar from "./components/SearchBar.jsx";
 import VideoDetails from "./components/VideoDetails.jsx";
 import VideoList from "./components/VideoList.jsx";
-import DarkMode from "./components/DarkMode.jsx";
+import { DarkMode } from "./components/DarkMode.jsx";
 import youtube from "./api/youtube";
 
 // export default function App() {
@@ -45,21 +45,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <Grid justify="center" container spacing={10}>
-          <Grid item xs={12}>
-            <Grid container spacing={10}>
-              <Grid item xs={12}>
-                <SearchBar onFormSubmit={this.handleSubmit} />
-              </Grid>
-              <Grid item spacing={10} xs={12}>
-                <VideoDetails video={this.state.selectedVideos} />
-              </Grid>
-              <Grid item xs={4}>
-                <VideoList />
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid> */}
         <DarkMode />
         <SearchBar onFormSubmit={this.handleSubmit} />
         <VideoDetails video={this.state.selectedVideos} />

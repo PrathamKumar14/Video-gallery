@@ -19,3 +19,13 @@
   width: 90%;
   height: 600px;
 } */
+
+h2,
+h3 {
+  color: #7952a0;
+  text-shadow: 2px 2px 2px rgb(189, 189, 189);
+}
+
+h3 {
+  text-transform: uppercase;
+}

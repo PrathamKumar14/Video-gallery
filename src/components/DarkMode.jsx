@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./DarkMode.css";
+import "./SearchBar.css";
 
 function DarkMode() {
   const [isClick, setIsClicked] = useState(true);
@@ -24,4 +25,5 @@ function DarkMode() {
   );
 }
 
-export default DarkMode;
+// export default DarkMode;
+export { DarkMode };
