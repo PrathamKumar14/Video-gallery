@@ -48,6 +48,7 @@ class App extends React.Component {
         <DarkMode />
         <SearchBar onFormSubmit={this.handleSubmit} />
         <VideoDetails video={this.state.selectedVideos} />
+        <VideoList videos={this.state.videos} />
       </div>
     );
   }

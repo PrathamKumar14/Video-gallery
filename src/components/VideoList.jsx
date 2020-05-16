@@ -1,13 +1,10 @@
 import React from "react";
+import VideoItem from "./VideoItem.jsx";
 
-class VideoList extends React.Component {
-  state = {
-    searchTerm: ""
-  };
+function VideoList(props) {
+  const listOfVideos = props.videos.map(video => <VideoItem video={video} />);
 
-  render() {
-    return <h1>Render video list here</h1>;
-  }
+  return listOfVideos;
 }
 
 export default VideoList;
