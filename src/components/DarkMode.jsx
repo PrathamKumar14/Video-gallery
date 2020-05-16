@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./DarkMode.css";
 
 function DarkMode() {
-  const [isClick, setIsClicked] = useState(false);
+  const [isClick, setIsClicked] = useState(true);
 
   return (
     <button
@@ -13,7 +13,7 @@ function DarkMode() {
         if (isClick) {
           document.body.style.backgroundColor = "black";
         } else {
-          document.body.style.backgroundColor = "white";
+          document.body.style.backgroundColor = "#ebecf0";
         }
       }}
     >
