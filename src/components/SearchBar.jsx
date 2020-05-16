@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
           type="text"
           placeholder="Search..."
         />
-        <button type="submit">
+        <button className="search-button" type="submit">
           <i className="fas fa-search" />
         </button>
       </form>
