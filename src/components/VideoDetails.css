@@ -10,7 +10,7 @@
   border: 5px solid rgb(180, 180, 180);
   border-radius: 30px;
   /* border-bottom-right-radius: 0px; */
-  box-shadow: 5px 5px 10px rgb(153, 153, 153);
+  /* box-shadow: 5px 5px 10px rgb(153, 153, 153); */
   /* box-shadow: -5px -5px 20px #fff, 5px 5px 20px #c0c0c0; */
   transition: all 2s ease-in-out;
 }

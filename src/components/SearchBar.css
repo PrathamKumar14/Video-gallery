@@ -2,6 +2,23 @@ form {
   text-align: center;
 }
 
+/* .testing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .test {
+  position: absolute;
+  top: 10px;
+} */
+
+/* .dark-btn {
+  position: absolute;
+  top: 10px;
+} */
+
 input {
   text-align: center;
   margin: 5px auto;

@@ -1,9 +1,17 @@
 .parent-div {
   display: inline-block;
+  max-height: 450px;
+  max-width: 450px;
 }
 
 iframe {
   height: 400px;
   width: 400px;
-  margin: 15px;
+  margin: 30px;
+  border: 5px solid rgb(180, 180, 180);
+  border-radius: 30px;
+}
+
+.description {
+  color: #7952a0;
 }
