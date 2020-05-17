@@ -8,6 +8,7 @@
   /* height: 100%;
   width: 100%; */
   border: 5px solid rgb(180, 180, 180);
+  /* border: 5px solid black; */
   border-radius: 30px;
   /* border-bottom-right-radius: 0px; */
   /* box-shadow: 5px 5px 10px rgb(153, 153, 153); */
@@ -15,10 +16,10 @@
   transition: all 2s ease-in-out;
 }
 
-/* .frame:hover {
+.frame:hover {
   width: 90%;
-  height: 600px;
-} */
+  height: 650px;
+}
 
 h2,
 h3 {
